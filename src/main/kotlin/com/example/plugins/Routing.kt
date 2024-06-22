@@ -14,10 +14,6 @@ fun Application.configureRouting() {
             val jsonString = JsonUtils.toJson(games, ListSerializer(GameCards.serializer()))
             call.respondText(jsonString, contentType = ContentType.Application.Json)
         }
-//        get("/test") {
-//            call.respondText("hello world", contentType = ContentType.Text.Plain)
-//        }
-
     }
 }
 
